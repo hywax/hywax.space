@@ -85,6 +85,12 @@ html.dark {
     --tw-prose-th-borders: rgba(var(--surface-hover) / 1);
     --tw-prose-td-borders: rgba(var(--surface) / 1);
 
+    & :is(pre) {
+      @apply border-2;
+      background-color: rgba(var(--surface) / 1);
+      border-color: rgba(var(--surface-hover) / 1);
+    }
+
     & :is(h2, h3, h4, h5) {
       @apply flex items-center;
     }

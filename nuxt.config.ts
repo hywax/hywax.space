@@ -26,6 +26,13 @@ export default defineNuxtConfig({
     navigation: {
       fields: ['publishedAt']
     },
+    highlight: {
+      theme: {
+        default: 'material-theme',
+        light: 'material-theme-lighter',
+        dark: 'material-theme-palenight'
+      }
+    },
     markdown: {
       remarkPlugins: ['remark-reading-time']
     }
