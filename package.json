@@ -30,6 +30,7 @@
     "nuxt": "^3.8.0",
     "nuxt-phosphor-icons": "^1.0.8",
     "prettier": "^3.0.3",
+    "remark-reading-time": "^2.0.1",
     "sass": "^1.69.5",
     "typescript": "^5.2.2",
     "vue": "^3.3.7",

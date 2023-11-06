@@ -25,6 +25,9 @@ export default defineNuxtConfig({
     defaultLocale: 'ru',
     navigation: {
       fields: ['publishedAt']
+    },
+    markdown: {
+      remarkPlugins: ['remark-reading-time']
     }
   },
   i18n: {
