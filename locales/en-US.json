@@ -1,7 +1,20 @@
 {
   "projects": "Projects",
   "uses": "Uses",
+  "uses.apps": "Apps",
+  "uses.services": "Services",
+  "uses.general": "General",
+  "uses.development": "Development",
+  "uses.utilities": "Utilities",
+  "uses.browserExtensions": "Browser Extensions",
+  "uses.webDevelopment": "Web Development",
+  "uses.badge.opensource": "Open Source",
+  "uses.badge.paid": "Paid",
+  "uses.badge.freemium": "Freemium",
+  "uses.badge.macos": "MacOS",
+  "uses.badge.ios": "iOS",
   "blog": "Blog",
   "license-text": "Code licensed under MIT, content licensed under CC BY-SA 4.0",
-  "theme-switcher": "Toggle theme"
+  "theme-switcher": "Toggle theme",
+  "not-found": "Not found"
 }
