@@ -34,25 +34,10 @@
 </template>
 
 <script setup lang="ts">
-  import type { LocaleObject } from 'vue-i18n-routing'
   import { onClickOutside } from '@vueuse/core'
+  import { useLocale } from '~/composables/useLocale'
 
-  const { locales } = useI18n()
-
-  const localesMap = computed(() =>
-    locales.value.reduce<Record<string, LocaleObject>>((acc, item) => {
-      if (typeof item === 'string') {
-        acc[item] = {
-          code: item,
-          name: '...'
-        }
-      } else {
-        acc[item.code] = item
-      }
-
-      return acc
-    }, {})
-  )
+  const { locales, localesMap } = useLocale()
 
   const trigger = ref<HTMLButtonElement>()
   const dropdown = ref<HTMLDivElement>()
