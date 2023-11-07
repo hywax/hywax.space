@@ -6,6 +6,11 @@ export default <Partial<Config>>{
   plugins: [tailwindTypography],
   darkMode: 'class',
   content: ['content/**/*.md'],
+  safelist: [
+    {
+      pattern: /bg-tailwind-(green|amber|sky)-500/
+    }
+  ],
   theme: {
     colors: {
       transparent: colors.transparent,
