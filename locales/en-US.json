@@ -14,6 +14,9 @@
   "uses.badge.macos": "MacOS",
   "uses.badge.ios": "iOS",
   "blog": "Blog",
+  "blog.reading.units": "min",
+  "blog.meta.published": "Published on",
+  "blog.meta.licensed": "Licensed under",
   "license-text": "Code licensed under MIT, content licensed under CC BY-SA 4.0",
   "theme-switcher": "Toggle theme",
   "not-found": "Not found"

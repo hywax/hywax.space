@@ -14,6 +14,9 @@
   "uses.badge.macos": "MacOS",
   "uses.badge.ios": "iOS",
   "blog": "Блог",
+  "blog.reading.units": "мин",
+  "blog.meta.published": "Опубликовано",
+  "blog.meta.licensed": "Лицензия",
   "license-text": "Код лицензирован под MIT, контент лицензирован под CC BY-SA 4.0",
   "theme-switcher": "Переключить тему",
   "not-found": "Ничего не найдено"
