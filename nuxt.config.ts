@@ -11,6 +11,11 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-phosphor-icons'
   ],
+  app: {
+    head: {
+      titleTemplate: '%s - Hywax'
+    }
+  },
   tailwindcss: {
     cssPath: '~/assets/style/tailwind.scss'
   },
