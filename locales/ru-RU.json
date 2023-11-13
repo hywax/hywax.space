@@ -1,5 +1,6 @@
 {
   "projects": "Проекты",
+  "projects.contributed": "Вклад в репозитории на GitHub",
   "uses": "Использую",
   "uses.apps": "Приложения",
   "uses.services": "Сервисы",

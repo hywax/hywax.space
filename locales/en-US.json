@@ -1,5 +1,6 @@
 {
   "projects": "Projects",
+  "projects.contributed": "Contributed repositories on GitHub",
   "uses": "Uses",
   "uses.apps": "Apps",
   "uses.services": "Services",
