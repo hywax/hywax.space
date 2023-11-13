@@ -28,7 +28,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          platforms: linux/amd64,linux/arm64
           file: ./Dockerfile
-          tags: {{ secrets.DOCKERHUB_USERNAME }}/space:latest
           push: true
+          tags: {{ secrets.DOCKERHUB_USERNAME }}/space:latest
