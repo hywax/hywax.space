@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   devtools: {
-    enabled: true
+    enabled: false
   },
   modules: [
     '@nuxtjs/i18n',
