@@ -65,8 +65,7 @@ export default defineNuxtConfig({
     defaultLocale: 'ru',
     detectBrowserLanguage: {
       useCookie: true,
-      alwaysRedirect: true,
-      onlyOnRoot: true
+      alwaysRedirect: true
     },
     locales: [
       {
