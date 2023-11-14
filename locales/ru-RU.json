@@ -1,6 +1,7 @@
 {
   "projects": "Проекты",
   "projects.contributed": "Вклад в репозитории на GitHub",
+  "projects.not-found": "Проектов не найдено",
   "uses": "Использую",
   "uses.apps": "Приложения",
   "uses.services": "Сервисы",
@@ -18,6 +19,7 @@
   "blog.reading.units": "мин",
   "blog.meta.published": "Опубликовано",
   "blog.meta.licensed": "Лицензия",
+  "blog.not-found": "Постов не найдено",
   "license-text": "Код лицензирован под MIT, контент лицензирован под CC BY-SA 4.0",
   "theme-switcher": "Переключить тему",
   "not-found": "Ничего не найдено"

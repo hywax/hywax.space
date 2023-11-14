@@ -10,7 +10,9 @@
       <span class="text-fg-less-dimmed font-medium">{{ $t('more') }} →</span>
     </NuxtLink>
   </div>
-  <NotFound v-else />
+  <NotFound v-else>
+    {{ $t('blog.not-found') }}
+  </NotFound>
 </template>
 
 <script setup lang="ts">
