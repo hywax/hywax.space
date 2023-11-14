@@ -17,17 +17,16 @@
       :style="`display: ${visible ? 'block' : 'none'}`"
     >
       <div class="py-1" role="none">
-        <NuxtLink
+        <a
           v-for="loc in localesMap"
           :key="loc.code"
-          :to="switchLocalePath(loc.code)"
+          :href="switchLocalePath(loc.code)"
           role="menuitem"
           class="block rounded-sm px-4 py-2 transition hover:text-accent"
-          active-class="bg-surface-hover"
           @click="visible = false"
         >
           {{ loc?.name }}
-        </NuxtLink>
+        </a>
       </div>
     </div>
   </div>
