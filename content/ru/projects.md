@@ -7,7 +7,7 @@ projects:
     link: 'https://github.com/hywax/hywax.space'
   - name: 'nuxt-cron'
     description: 'Модуль Nuxt для Cron задач в вашем приложении.'
-    link: 'https://github.com/hywax/nuxt-cron'
+    link: 'https://nuxt-cron.hywax.space'
 ---
 
 ::h1{.title}
