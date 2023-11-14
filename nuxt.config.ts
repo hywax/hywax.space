@@ -10,7 +10,8 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@vueuse/nuxt',
     'nuxt-phosphor-icons',
-    'nuxt-cron'
+    'nuxt-cron',
+    '@nuxtjs/robots'
   ],
   app: {
     head: {

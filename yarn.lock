@@ -1062,7 +1062,7 @@
     unimport "^3.4.0"
     untyped "^1.4.0"
 
-"@nuxt/kit@^3.8.1":
+"@nuxt/kit@^3.0.0", "@nuxt/kit@^3.8.1":
   version "3.8.1"
   resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-3.8.1.tgz#64b3f161fdf56175af0f535c465b0c76b9730da0"
   integrity sha512-DrhG1Z85iH68QOTkgfb0HVfM2g7+CfcMWrFWMDwck9ofyM2RXQUZyfmvMedwBnui1AjjpgpLO9078yZM+RqNUg==
@@ -1310,6 +1310,14 @@
     unified "^11.0.3"
     unist-builder "^4.0.0"
     unist-util-visit "^5.0.0"
+
+"@nuxtjs/robots@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/robots/-/robots-3.0.0.tgz#057f0a68d847f22c36b4e574b456173e3f3d80b0"
+  integrity sha512-qsHGW1KXBvV5Kq7u3huPnFCUTbHS4Fk8Za2mNPgmUXcwLgp3exvhPtdZfIdjrCF/aZk3A8OZONNmGghs6CecBA==
+  dependencies:
+    "@nuxt/kit" "^3.0.0"
+    h3 "^1.0.1"
 
 "@nuxtjs/tailwindcss@^6.9.4":
   version "6.9.4"
@@ -4467,7 +4475,7 @@ gzip-size@^7.0.0:
   dependencies:
     duplexer "^0.1.2"
 
-h3@^1.7.1, h3@^1.8.1, h3@^1.8.2:
+h3@^1.0.1, h3@^1.7.1, h3@^1.8.1, h3@^1.8.2:
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/h3/-/h3-1.8.2.tgz#69ea8ca0285c1bb268cd08b9a7017e02939f88b7"
   integrity sha512-1Ca0orJJlCaiFY68BvzQtP2lKLk46kcLAxVM8JgYbtm2cUg6IY7pjpYgWMwUvDO9QI30N5JAukOKoT8KD3Q0PQ==
