@@ -27,7 +27,7 @@
 
 <script setup lang="ts">
   import type { Component } from 'vue'
-  import { PhosphorIconGithubLogo, PhosphorIconTwitterLogo } from '#components'
+  import { PhosphorIconGithubLogo, PhosphorIconTelegramLogo, PhosphorIconTwitterLogo } from '#components'
 
   interface SocialItem {
     label: string
@@ -40,6 +40,11 @@
       label: 'Github',
       to: 'https://github.com/hywax',
       icon: PhosphorIconGithubLogo
+    },
+    {
+      label: 'Telegram',
+      to: 'https://t.me/hywax',
+      icon: PhosphorIconTelegramLogo
     },
     {
       label: 'X (Twitter)',
