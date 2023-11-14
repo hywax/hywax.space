@@ -98,8 +98,13 @@ services:
       badges:
         - freemium
     - name: 'Reg ru'
-      description: 'Хостинг/VPS/Домены'
+      description: 'Хостинг/Домены'
       link: 'https://www.reg.ru/'
+      badges:
+        - paid
+    - name: 'Timeweb.cloud'
+      description: 'VPS'
+      link: 'https://timeweb.cloud/'
       badges:
         - paid
 ---
