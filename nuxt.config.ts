@@ -9,7 +9,8 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxt/content',
     '@vueuse/nuxt',
-    'nuxt-phosphor-icons'
+    'nuxt-phosphor-icons',
+    'nuxt-cron'
   ],
   app: {
     head: {
@@ -21,6 +22,9 @@ export default defineNuxtConfig({
   },
   colorMode: {
     classSuffix: ''
+  },
+  cron: {
+    runOnInit: true
   },
   content: {
     locales: [

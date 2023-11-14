@@ -28,6 +28,7 @@
     "eslint-plugin-prettier-vue": "^5.0.0",
     "eslint-plugin-vue": "^9.18.1",
     "nuxt": "^3.8.0",
+    "nuxt-cron": "^1.1.0",
     "nuxt-phosphor-icons": "^1.0.8",
     "prettier": "^3.0.3",
     "remark-reading-time": "^2.0.1",
