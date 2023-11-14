@@ -1,5 +1,5 @@
 <template>
-  <div v-if="locales.length > 1" class="relative inline-block text-left">
+  <div v-if="Object.values(locales).length" class="relative inline-block text-left">
     <button
       ref="trigger"
       class="p-1 rounded-sm font-semibold transition bg-transparent hover:bg-transparent link"
@@ -17,16 +17,16 @@
       :style="`display: ${visible ? 'block' : 'none'}`"
     >
       <div class="py-1" role="none">
-        <a
-          v-for="loc in localesMap"
-          :key="loc.code"
-          :href="switchLocalePath(loc.code)"
+        <button
+          v-for="locale in locales"
+          :key="locale.code"
+          :disabled="locale.current"
           role="menuitem"
-          class="block rounded-sm px-4 py-2 transition hover:text-accent"
-          @click="visible = false"
+          class="block w-full rounded-sm px-4 py-2 text-left transition hover:text-accent"
+          @click.prevent="changeLocale(locale.code)"
         >
-          {{ loc?.name }}
-        </a>
+          {{ locale?.name }}
+        </button>
       </div>
     </div>
   </div>
@@ -36,7 +36,7 @@
   import { onClickOutside } from '@vueuse/core'
   import { useLocale } from '~/composables/useLocale'
 
-  const { locales, localesMap } = useLocale()
+  const { locales, changeLocale } = useLocale()
 
   const trigger = ref<HTMLButtonElement>()
   const dropdown = ref<HTMLDivElement>()

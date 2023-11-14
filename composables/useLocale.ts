@@ -1,29 +1,38 @@
-import type { LocaleObject } from 'vue-i18n-routing'
+import { useSwitchLocalePath } from 'vue-i18n-routing'
+
+export interface LocaleItem {
+  code: string
+  name: string
+  current: boolean
+}
 
 export const useLocale = () => {
-  const { locale, locales } = useI18n()
+  const { locale, locales, setLocaleCookie } = useI18n()
+  const switchLocalePath = useSwitchLocalePath()
 
-  const localesMap = computed(() =>
-    locales.value.reduce<Record<string, LocaleObject>>((acc, item) => {
-      if (typeof item === 'string') {
-        acc[item] = {
-          code: item,
-          name: '...'
-        }
-      } else {
-        acc[item.code] = item
+  const localesMap = computed<Record<LocaleItem['code'], LocaleItem>>(() =>
+    locales.value.reduce<Record<LocaleItem['code'], LocaleItem>>((acc, item) => {
+      acc[item.code] = {
+        code: item.code,
+        name: item.name,
+        current: locale.value === item.code
       }
 
       return acc
     }, {})
   )
 
-  const currentLocale = computed<LocaleObject>(() => localesMap.value[locale.value])
+  const changeLocale = (code: string) => {
+    setLocaleCookie(code)
+
+    navigateTo(switchLocalePath(code), {
+      external: true
+    })
+  }
 
   return {
     locale,
-    locales,
-    localesMap,
-    currentLocale
+    changeLocale,
+    locales: localesMap
   }
 }
