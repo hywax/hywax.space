@@ -83,14 +83,6 @@ export default defineNuxtConfig({
     ]
   },
   robots: {
-    rules: {
-      disallow: '/?',
-      sitemap: `${process.env.NUXT_HOST_URL}/sitemap.xml`
-    }
-  },
-  nitro: {
-    prerender: {
-      routes: ['/sitemap.xml']
-    }
+    configPath: '~/config/robots'
   }
 })
