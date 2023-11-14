@@ -20,6 +20,7 @@ export const usePosts = () => {
   const getPosts = async (limit = 0): Promise<PostsItem[]> => {
     const list = await queryContent<PostsContent>('posts')
       .where({
+        _locale: locale.value,
         publishedAt: {
           $exists: true
         }

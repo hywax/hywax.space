@@ -18,8 +18,9 @@ export interface ContributionsItem {
 }
 
 export const useProjects = () => {
+  const { locale } = useLocale()
   const getProjects = async (limit = 0): Promise<ProjectsItem[]> => {
-    const page = await queryContent<ProjectsContent>('projects').findOne()
+    const page = await queryContent<ProjectsContent>('projects').where({ _locale: locale.value }).findOne()
 
     return limit ? page.projects.slice(0, limit) : page.projects
   }
