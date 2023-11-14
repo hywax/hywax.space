@@ -2,6 +2,14 @@ export default defineNuxtConfig({
   devtools: {
     enabled: false
   },
+  runtimeConfig: {
+    host: {
+      url: ''
+    },
+    github: {
+      token: ''
+    }
+  },
   modules: [
     '@nuxtjs/i18n',
     '@nuxtjs/eslint-module',
@@ -65,5 +73,16 @@ export default defineNuxtConfig({
         file: 'ru-RU.json'
       }
     ]
+  },
+  robots: {
+    rules: {
+      disallow: '/?',
+      sitemap: `${process.env.NUXT_HOST_URL}/sitemap.xml`
+    }
+  },
+  nitro: {
+    prerender: {
+      routes: ['/sitemap.xml']
+    }
   }
 })
