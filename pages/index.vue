@@ -1,6 +1,6 @@
 <template>
   <article class="prose enhanced-prose">
-    <ContentDoc />
+    <ContentDoc :query="query" />
 
     <h2 class="text-3xl">{{ $t('blog') }}</h2>
     <div class="not-prose">
@@ -20,6 +20,8 @@
 <script setup lang="ts">
   import { useProjects } from '~/composables/useProjects'
   import { usePosts } from '~/composables/usePosts'
+
+  const { query } = useLocaleContent()
 
   const { getProjects } = useProjects()
   const projects = await getProjects(7)
