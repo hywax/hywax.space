@@ -36,10 +36,7 @@ export default defineNuxtConfig({
     runOnInit: true
   },
   content: {
-    locales: [
-      // 'en',
-      'ru'
-    ],
+    locales: ['en', 'ru'],
     defaultLocale: 'ru',
     navigation: {
       fields: ['publishedAt']
@@ -60,12 +57,12 @@ export default defineNuxtConfig({
     strategy: 'prefix_except_default',
     defaultLocale: 'ru',
     locales: [
-      // {
-      //  code: 'en',
-      //  iso: 'en-US',
-      //  name: 'English',
-      //  file: 'en-US.json'
-      // },
+      {
+        code: 'en',
+        iso: 'en-US',
+        name: 'English',
+        file: 'en-US.json'
+      },
       {
         code: 'ru',
         iso: 'ru-RU',
