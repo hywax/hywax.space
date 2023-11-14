@@ -1,6 +1,6 @@
 <template>
   <div class="mx-auto max-w-[80ch]">
-    <ContentDoc v-slot="{ doc }">
+    <ContentDoc v-slot="{ doc }" :query="query">
       <ContentRenderer :value="doc" />
 
       <h2 class="text-3xl font-bold mb-6">{{ $t('uses.apps') }}</h2>
@@ -27,3 +27,7 @@
     </ContentDoc>
   </div>
 </template>
+
+<script setup lang="ts">
+  const { query } = useLocaleContent()
+</script>

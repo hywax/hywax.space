@@ -1,6 +1,6 @@
 <template>
   <article class="prose enhanced-prose font-prose mb-16 mx-auto max-w-[80ch]">
-    <ContentDoc v-slot="{ doc }">
+    <ContentDoc v-slot="{ doc }" :query="query">
       <h1>{{ doc.title }}</h1>
       <ContentRenderer :value="doc" />
 
@@ -27,4 +27,6 @@
 </template>
 <script setup lang="ts">
   const { formatDate } = usePosts()
+
+  const { query } = useLocaleContent()
 </script>

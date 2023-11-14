@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ContentDoc v-slot="{ doc }">
+    <ContentDoc v-slot="{ doc }" :query="query">
       <ContentRenderer :value="doc" />
 
       <ProjectsGrid :items="doc.projects" />
@@ -12,6 +12,8 @@
 </template>
 
 <script setup lang="ts">
+  const { query } = useLocaleContent()
+
   // const { getContributions } = useProjects()
   // const contributions = await getContributions()
 </script>
