@@ -2,6 +2,8 @@
   "projects": "Проекты",
   "projects.contributed": "Вклад в репозитории на GitHub",
   "projects.not-found": "Проектов не найдено",
+  "projects.code": "Код",
+  "projects.reload": "Перезагрузить",
   "uses": "Использую",
   "uses.apps": "Приложения",
   "uses.services": "Сервисы",

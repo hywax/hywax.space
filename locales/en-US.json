@@ -2,6 +2,8 @@
   "projects": "Projects",
   "projects.contributed": "Contributed repositories on GitHub",
   "projects.not-found": "Projects not found",
+  "projects.code": "Code",
+  "projects.reload": "Reload",
   "uses": "Uses",
   "uses.apps": "Apps",
   "uses.services": "Services",
