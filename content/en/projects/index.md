@@ -8,6 +8,9 @@ projects:
   - name: 'nuxt-cron'
     description: 'A Nuxt module for cron jobs in your app'
     link: 'https://nuxt-cron.hywax.space'
+  - name: 'muuto'
+    description: 'Word generator in ikea language'
+    link: '/en/projects/muuto'
 ---
 
 ::h1{.title}
