@@ -6673,6 +6673,11 @@ muggle-string@^0.3.1:
   resolved "https://registry.yarnpkg.com/muggle-string/-/muggle-string-0.3.1.tgz#e524312eb1728c63dd0b2ac49e3282e6ed85963a"
   integrity sha512-ckmWDJjphvd/FvZawgygcUeQCxzvohjFO5RxTjj4eq8kw359gFF3E1brjfI+viLMxss5JrHTDRHZvu2/tuy0Qg==
 
+muuto@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/muuto/-/muuto-2.0.0.tgz#2a0ef9ad467daad04096f803299f9a373dc24ad9"
+  integrity sha512-yyOHFtWB1xnEfnHGE7kfD3A+YoIVuD+y5UzY9vQiYrZXiu/aIN4txui0phynsGtCr2/jp1x+lRQfbRa8fJPk7g==
+
 mz@^2.7.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/mz/-/mz-2.7.0.tgz#95008057a56cafadc2bc63dde7f9ff6955948e32"
