@@ -6980,10 +6980,10 @@ nuxi@^3.9.1:
   optionalDependencies:
     fsevents "~2.3.3"
 
-nuxt-cron@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/nuxt-cron/-/nuxt-cron-1.2.0.tgz#c89e53e73f89c3601303a34e930298c87de95ad9"
-  integrity sha512-tKqR6JxflwirCVQXBVSwhkQCCxgwCABnTWr3xaSrjUyLUeEMmYNCSdoeGszeRieVhFkOP6KmIUPntrgrEYM32A==
+nuxt-cron@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/nuxt-cron/-/nuxt-cron-1.4.0.tgz#638a1d1ff0aeb93dc0dbd18012b004635fbc9400"
+  integrity sha512-CPmB9FHMoeFbe/e0GcJXlAmAA0V227ReULBL/bx3gNfVvYUYZeCrw2U5FWW/rWOCM4fpmo9/oJkN+E+iEY8xJg==
   dependencies:
     "@nuxt/kit" "^3.8.1"
     cron "^3.1.6"
