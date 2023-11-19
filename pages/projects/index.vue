@@ -7,13 +7,13 @@
     </ContentDoc>
 
     <h2 class="mb-6 text-2xl font-bold">{{ $t('projects.contributed') }}</h2>
-    <ContributedGrid :items="[]" />
+    <ContributedGrid :items="contributions" />
   </div>
 </template>
 
 <script setup lang="ts">
   const { query } = useLocaleContent()
 
-  // const { getContributions } = useProjects()
-  // const contributions = await getContributions()
+  const { getContributions } = useProjects()
+  const contributions = await getContributions()
 </script>

@@ -1,3 +1,5 @@
+import { getContributions } from '~/server/services/contributions'
+
 export default defineEventHandler(async () => {
-  return await new Promise((resolve) => resolve([]))
+  return await getContributions()
 })
