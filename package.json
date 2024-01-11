@@ -7,10 +7,11 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
     "lint:es": "eslint --ext .js,.ts,.vue",
     "lint:fix": "yarn lint:es --fix",
-    "test:type": "nuxi typecheck"
+    "test:type": "nuxi typecheck",
+    "postinstall": "nuxt prepare",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
@@ -23,6 +24,7 @@
     "@typescript-eslint/parser": "^6.9.1",
     "eslint": "^8.53.0",
     "eslint-plugin-vue": "^9.18.1",
+    "husky": "^8.0.3",
     "nuxt": "^3.8.0",
     "nuxt-cron": "^1.4.0",
     "nuxt-phosphor-icons": "^1.0.8",
