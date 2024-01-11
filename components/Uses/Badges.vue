@@ -2,9 +2,8 @@
   <span
     v-for="(item, key) in items"
     :key="key"
-    :class="[
-      'text-xs font-medium text-white px-1.5 py-0.5 rounded-sm',
-      `bg-tailwind-${badgeMap[item].color}-500`
+    class="text-xs font-medium text-white px-1.5 py-0.5 rounded-sm" :class="[
+      `bg-tailwind-${badgeMap[item].color}-500`,
     ]"
   >
     {{ badgeMap[item].label }}
@@ -18,32 +17,32 @@
     items?: UsesBadge[]
   }
 
-  export type BadgeMap = Record<UsesBadge, { label: string; color: string }>
+  export type BadgeMap = Record<UsesBadge, { label: string, color: string }>
+
+  defineProps<Props>()
 
   const { t } = useI18n()
 
   const badgeMap: BadgeMap = {
     opensource: {
       label: t('uses.badge.opensource'),
-      color: 'green'
+      color: 'green',
     },
     paid: {
       label: t('uses.badge.paid'),
-      color: 'amber'
+      color: 'amber',
     },
     freemium: {
       label: t('uses.badge.freemium'),
-      color: 'amber'
+      color: 'amber',
     },
     macos: {
       label: t('uses.badge.macos'),
-      color: 'sky'
+      color: 'sky',
     },
     ios: {
       label: t('uses.badge.ios'),
-      color: 'sky'
-    }
+      color: 'sky',
+    },
   }
-
-  defineProps<Props>()
 </script>

@@ -5,6 +5,6 @@ export default [
   { Disallow: '/?' },
   { BlankLine: true },
   {
-    Sitemap: (req: IncomingMessage) => `https://${req.headers.host}/sitemap.xml`
-  }
+    Sitemap: (req: IncomingMessage) => `https://${req.headers.host}/sitemap.xml`,
+  },
 ]

@@ -39,17 +39,17 @@
     {
       label: 'Github',
       to: 'https://github.com/hywax',
-      icon: PhosphorIconGithubLogo
+      icon: PhosphorIconGithubLogo,
     },
     {
       label: 'Telegram',
       to: 'https://t.me/hywax',
-      icon: PhosphorIconTelegramLogo
+      icon: PhosphorIconTelegramLogo,
     },
     {
       label: 'X (Twitter)',
       to: 'https://twitter.com/hywax_',
-      icon: PhosphorIconTwitterLogo
-    }
+      icon: PhosphorIconTwitterLogo,
+    },
   ]
 </script>

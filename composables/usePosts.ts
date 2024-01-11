@@ -12,7 +12,7 @@ export interface PostsContent extends MarkdownParsedContent {
   publishedAt: string
 }
 
-export const usePosts = () => {
+export function usePosts() {
   const { locale } = useLocale()
 
   const formatDate = (date: string) => new Date(date).toLocaleDateString(locale.value)
@@ -22,8 +22,8 @@ export const usePosts = () => {
       .where({
         _locale: locale.value,
         publishedAt: {
-          $exists: true
-        }
+          $exists: true,
+        },
       })
       .limit(limit)
       .find()
@@ -32,12 +32,12 @@ export const usePosts = () => {
       name: content.title!,
       link: content._path!,
       readingTime: Math.ceil(content.readingTime.minutes).toString(),
-      published: formatDate(content.publishedAt)
+      published: formatDate(content.publishedAt),
     }))
   }
 
   return {
     getPosts,
-    formatDate
+    formatDate,
   }
 }

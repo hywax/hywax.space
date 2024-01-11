@@ -12,7 +12,7 @@
         width="32"
         height="32"
         alt="Hywax"
-      />
+      >
       <span class="p-name tracking-tight leading-none text-2xl font-bold">Hywax</span>
     </NuxtLink>
     <div class="flex flex-col gap-y-2 md:flex-row md:items-center md:gap-x-4 md:gap-y-0">
@@ -52,17 +52,17 @@
     {
       to: { name: 'projects' },
       icon: PhosphorIconRocketLaunch,
-      label: t('projects')
+      label: t('projects'),
     },
     {
       to: { name: 'uses' },
       icon: PhosphorIconBookmarkSimple,
-      label: t('uses')
+      label: t('uses'),
     },
     {
       to: { name: 'posts' },
       icon: PhosphorIconPencilSimple,
-      label: t('blog')
-    }
+      label: t('blog'),
+    },
   ]
 </script>

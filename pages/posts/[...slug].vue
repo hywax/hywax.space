@@ -25,6 +25,7 @@
     </ContentDoc>
   </article>
 </template>
+
 <script setup lang="ts">
   const { formatDate } = usePosts()
 

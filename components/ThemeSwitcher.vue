@@ -1,6 +1,5 @@
 <template>
   <button
-    ref="trigger"
     class="p-1 rounded-sm font-semibold transition bg-transparent hover:bg-transparent link"
     :aria-label="$t('theme-switcher')"
     @click="isDark = !isDark"
@@ -18,6 +17,6 @@
     },
     set() {
       colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
-    }
+    },
   })
 </script>

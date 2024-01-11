@@ -48,7 +48,7 @@ const queryContributions = `{
   }
 }`
 
-export const fetchContributions = async (): Promise<ContributionsItem[]> => {
+export async function fetchContributions(): Promise<ContributionsItem[]> {
   if (!import.meta.env.NUXT_GITHUB_TOKEN) {
     return []
   }
@@ -57,12 +57,12 @@ export const fetchContributions = async (): Promise<ContributionsItem[]> => {
     const response = await fetch('https://api.github.com/graphql', {
       method: 'POST',
       headers: {
-        Authorization: `Bearer ${import.meta.env.NUXT_GITHUB_TOKEN}`,
-        'Content-Type': 'application/json'
+        'Authorization': `Bearer ${import.meta.env.NUXT_GITHUB_TOKEN}`,
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        query: queryContributions
-      })
+        query: queryContributions,
+      }),
     })
 
     const data = (await response.json()) as { data: GraphQLResponse }
@@ -72,7 +72,7 @@ export const fetchContributions = async (): Promise<ContributionsItem[]> => {
       .map<ContributionsItem>((repository) => ({
         name: repository.nameWithOwner,
         url: repository.url,
-        star: repository.stargazers.totalCount
+        star: repository.stargazers.totalCount,
       }))
   } catch (e) {
     // ...
@@ -81,12 +81,12 @@ export const fetchContributions = async (): Promise<ContributionsItem[]> => {
   return []
 }
 
-export const collectContributions = async (): Promise<void> => {
+export async function collectContributions(): Promise<void> {
   const data = await fetchContributions()
 
   await storage.setItem('items', data)
 }
 
-export const getContributions = async () => {
+export async function getContributions() {
   return (await storage.getItem('items')) || []
 }

@@ -33,7 +33,7 @@
     return PhosphorIconLink
   })
 
-  const isExternalUrl = (string) => {
+  function isExternalUrl(string) {
     try {
       return Boolean(new URL(string))
     } catch (e) {}
@@ -46,7 +46,7 @@
       href: props.project.link,
       class:
         'flex flex-col justify-between p-6 rounded-lg transition-all bg-surface hover:bg-surface-hover shadow-md shadow-surface/20',
-      ...(isExternalUrl(props.project.link) ? { target: '_blank', rel: 'noreferrer nofollow' } : null)
+      ...(isExternalUrl(props.project.link) ? { target: '_blank', rel: 'noreferrer nofollow' } : null),
     }
   })
 </script>

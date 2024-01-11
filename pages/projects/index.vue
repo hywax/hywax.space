@@ -6,7 +6,9 @@
       <ProjectsGrid :items="doc.projects" />
     </ContentDoc>
 
-    <h2 class="mb-6 text-2xl font-bold">{{ $t('projects.contributed') }}</h2>
+    <h2 class="mb-6 text-2xl font-bold">
+      {{ $t('projects.contributed') }}
+    </h2>
     <ContributedGrid :items="contributions" />
   </div>
 </template>

@@ -49,6 +49,6 @@
         visible.value = false
       }
     },
-    { ignore: [trigger] }
+    { ignore: [trigger] },
   )
 </script>

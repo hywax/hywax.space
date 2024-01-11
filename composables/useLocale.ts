@@ -6,7 +6,7 @@ export interface LocaleItem {
   current: boolean
 }
 
-export const useLocale = () => {
+export function useLocale() {
   const { locale, locales, setLocaleCookie } = useI18n()
   const switchLocalePath = useSwitchLocalePath()
 
@@ -15,24 +15,24 @@ export const useLocale = () => {
       acc[item.code] = {
         code: item.code,
         name: item.name,
-        current: locale.value === item.code
+        current: locale.value === item.code,
       }
 
       return acc
-    }, {})
+    }, {}),
   )
 
   const changeLocale = (code: string) => {
     setLocaleCookie(code)
 
     navigateTo(switchLocalePath(code), {
-      external: true
+      external: true,
     })
   }
 
   return {
     locale,
     changeLocale,
-    locales: localesMap
+    locales: localesMap,
   }
 }

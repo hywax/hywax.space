@@ -39,7 +39,7 @@
 
   const getWords = () => Array.from({ length: 70 }, () => muuto())
 
-  const roll = () => {
+  function roll() {
     words.value = [...getWords()]
   }
 

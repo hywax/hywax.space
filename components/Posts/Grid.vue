@@ -28,7 +28,7 @@
   const props = withDefaults(defineProps<Props>(), {
     items: null,
     layout: 'grid',
-    moreLink: undefined
+    moreLink: undefined,
   })
 
   const gridClasses = computed(() => {
