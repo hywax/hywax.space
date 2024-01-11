@@ -12,10 +12,10 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxtjs/i18n',
-    '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@nuxt/content',
     '@vueuse/nuxt',
+    '@unocss/nuxt',
     'nuxt-phosphor-icons',
     'nuxt-cron',
     '@nuxtjs/robots',
@@ -46,15 +46,15 @@ export default defineNuxtConfig({
       ],
     },
   },
-  tailwindcss: {
-    cssPath: '~/assets/style/tailwind.scss',
-  },
   colorMode: {
     classSuffix: '',
   },
-  cron: {
-    runOnInit: true,
-  },
+  css: [
+    '@unocss/reset/tailwind.css',
+    '~/assets/style/main.css',
+    '~/assets/style/markdown.css',
+    '~/assets/style/prose.css',
+  ],
   content: {
     locales: ['en', 'ru'],
     defaultLocale: 'ru',
