@@ -7,7 +7,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "lint:es": "eslint --ext .js,.ts,.vue",
+    "lint:es": "eslint .",
     "lint:fix": "yarn lint:es --fix",
     "test:type": "nuxi typecheck",
     "postinstall": "nuxt prepare",
@@ -25,6 +25,7 @@
     "eslint": "^8.53.0",
     "eslint-plugin-vue": "^9.18.1",
     "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
     "nuxt": "^3.8.0",
     "nuxt-cron": "^1.4.0",
     "nuxt-phosphor-icons": "^1.0.8",
@@ -41,5 +42,8 @@
     "@vueuse/nuxt": "^10.5.0",
     "muuto": "^2.0.0",
     "sitemap": "^7.1.1"
+  },
+  "lint-staged": {
+    "*.ts": "yarn run lint:es"
   }
 }
