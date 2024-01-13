@@ -19,7 +19,7 @@
 </template>
 
 <script setup lang="ts">
-  import type { PostsItem } from '~/composables/usePosts'
+  import type { PostsItem } from '~/types'
 
   export interface Props {
     post: PostsItem

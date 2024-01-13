@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-  import type { ContributionsItem } from '~/composables/useProjects'
+  import type { ContributionsItem } from '~/types'
 
   export interface Props {
     title: string
