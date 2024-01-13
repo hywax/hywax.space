@@ -18,7 +18,7 @@
     link: [...(i18nHead.value.link || [])],
     meta: [...(i18nHead.value.meta || [])],
     bodyAttrs: {
-      class: 'font-sans text-gray-700 dark:text-gray-200 relative',
+      class: 'font-sans text-gray-700 dark:text-gray-200 px-4 md:px-10',
     },
   })
 </script>
