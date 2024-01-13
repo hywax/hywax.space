@@ -1,11 +1,9 @@
 <template>
-  <div>
-    <Header />
+  <NavBar />
 
-    <main class="flex flex-col w-full md:px-9 md:px-9">
-      <slot />
-    </main>
+  <main class="py-10">
+    <slot />
+  </main>
 
-    <Footer />
-  </div>
+  <Footer />
 </template>
