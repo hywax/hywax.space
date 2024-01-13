@@ -49,15 +49,9 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
   },
-  css: [
-    '@unocss/reset/tailwind.css',
-    '~/assets/style/main.css',
-    '~/assets/style/markdown.css',
-    '~/assets/style/prose.css',
-  ],
   content: {
     locales: ['en', 'ru'],
-    defaultLocale: 'ru',
+    defaultLocale: 'en',
     navigation: {
       fields: ['publishedAt'],
     },
@@ -75,7 +69,7 @@ export default defineNuxtConfig({
   i18n: {
     langDir: 'locales',
     strategy: 'prefix_except_default',
-    defaultLocale: 'ru',
+    defaultLocale: 'en',
     detectBrowserLanguage: {
       useCookie: true,
       alwaysRedirect: true,
