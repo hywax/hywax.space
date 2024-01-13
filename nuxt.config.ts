@@ -3,6 +3,11 @@ export default defineNuxtConfig({
     enabled: false,
   },
   runtimeConfig: {
+    social: {
+      github: 'https://github.com/hywax',
+      twitter: 'https://twitter.com/hywax_',
+      telegram: 'https://t.me/hywax',
+    },
     host: {
       url: '',
     },
