@@ -1,15 +1,15 @@
 <template>
-  <div class="flex gap-x-2 justify-between w-full">
+  <div class="flex gap-x-3 justify-between w-full op70 hover:op100 transition">
     <a
       :href="item.url"
-      class="font-semibold text-sm overflow-hidden overflow-ellipsis whitespace-nowrap min-w-0 underline underline-offset-2 decoration-transparent hover:decoration-fg-less-dimmed transition-all"
+      class="text-sm overflow-hidden overflow-ellipsis whitespace-nowrap min-w-0 underline underline-offset-2 decoration-transparent transition-all"
       target="_blank"
       rel="noreferrer nofollow"
     >
       {{ item.name }}
     </a>
-    <div class="flex gap-x-1 items-center text-fg-dimmed">
-      <PhosphorIconStar class="block w-3 h-3 fill-current stroke-none" />
+    <div class="flex gap-x-1 items-center opacity-50">
+      <span class="i-lucide:star w-3 h-3" />
       <span class="text-xs font-medium">{{ item.star }}</span>
     </div>
   </div>
