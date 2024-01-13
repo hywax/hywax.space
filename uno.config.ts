@@ -1,9 +1,10 @@
-import { defineConfig, presetAttributify, presetIcons, presetTypography, presetUno, presetWebFonts, transformerDirectives } from 'unocss'
+import { defineConfig, presetAttributify, presetIcons, presetMini, presetTypography, presetUno, presetWebFonts, transformerDirectives } from 'unocss'
 
 export default defineConfig({
   presets: [
     presetUno(),
     presetAttributify(),
+    presetMini(),
     presetIcons({
       extraProperties: {
         'display': 'inline-block',
