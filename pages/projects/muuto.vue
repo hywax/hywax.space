@@ -1,33 +1,25 @@
 <template>
-  <div class="mx-auto w-full max-w-[80ch]">
+  <article class="prose m-a">
     <ContentDoc v-slot="{ doc }" :query="query">
       <ContentRenderer :value="doc" />
     </ContentDoc>
 
-    <div class="rounded-lg p-6 border border-surface hover:border-surface-hover transition-colors">
-      <TransitionGroup tag="ul" name="fade" class="flex flex-wrap gap-2 leading-8 text-xl mb-8">
+    <h2>{{ $t('projects.muuto.preview') }}</h2>
+    <div class="preview not-prose rounded-lg p-6">
+      <TransitionGroup tag="ul" name="fade" class="flex flex-wrap gap-2 mb-8">
         <li v-for="(word, key) in words" :key="key">
-          {{ word }}
+          <code>{{ word }}</code>
         </li>
       </TransitionGroup>
 
       <div class="flex gap-x-4 justify-end">
-        <button class="text-lg" @click="roll">
-          <PhosphorIconArrowsClockwise />
-          <span>{{ $t('projects.reload') }}</span>
+        <button @click="roll">
+          <span class="i-tabler:reload mr-2" />
+          <span>{{ $t('projects.muuto.reload') }}</span>
         </button>
-        <a
-          href="https://github.com/hywax/muuto"
-          class="text-lg buttonish"
-          target="_blank"
-          rel="noreferrer nofollow"
-        >
-          <PhosphorIconGithubLogo />
-          <span>{{ $t('projects.code') }}</span>
-        </a>
       </div>
     </div>
-  </div>
+  </article>
 </template>
 
 <script setup lang="ts">
@@ -37,10 +29,8 @@
 
   const words = ref<string[]>([])
 
-  const getWords = () => Array.from({ length: 70 }, () => muuto())
-
   function roll() {
-    words.value = [...getWords()]
+    words.value = Array.from({ length: 30 }, () => muuto())
   }
 
   onMounted(() => {
@@ -49,6 +39,10 @@
 </script>
 
 <style lang="scss" scoped>
+  .preview {
+    background-color: var(--surface);
+  }
+
   .fade-move,
   .fade-enter-active,
   .fade-leave-active {
