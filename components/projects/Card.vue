@@ -32,7 +32,7 @@
     return props.project.icon || 'i-uil-github-alt'
   })
 
-  const isExternalUrl = (string) => {
+  function isExternalUrl(string) {
     try {
       return Boolean(new URL(string))
     } catch (e) {}

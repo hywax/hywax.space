@@ -4,8 +4,8 @@ import { FileSystemIconLoader } from '@iconify/utils/lib/loader/node-loaders'
 export default defineConfig({
   content: {
     filesystem: [
-      'content/**/*.md'
-    ]
+      'content/**/*.md',
+    ],
   },
   presets: [
     presetUno(),
@@ -19,8 +19,8 @@ export default defineConfig({
         'vertical-align': 'text-bottom',
       },
       collections: {
-        custom: FileSystemIconLoader('./assets/icons')
-      }
+        custom: FileSystemIconLoader('./assets/icons'),
+      },
     }),
     presetTypography(),
     presetWebFonts({
