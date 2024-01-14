@@ -34,6 +34,9 @@ jobs:
         run: yarn install
       - name: Build with Nuxt
         run: yarn generate
+        env:
+          NUXT_HOST_URL: ${{ secrets.NUXT_HOST_URL  }}
+          NUXT_GITHUB_TOKEN: ${{ secrets.NUXT_GITHUB_TOKEN  }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
