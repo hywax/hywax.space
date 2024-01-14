@@ -1,7 +1,7 @@
 <template>
   <a href="#" class="project relative flex items-center op70 hover:op100 transition">
     <div class="pt-2 pr-4">
-      <div class="w-9 h-9 opacity-50 i-uil-github-alt" />
+      <div class="w-9 h-9 opacity-50" :class="icon" />
     </div>
     <div class="flex-auto">
       <div class="text-normal">
@@ -21,7 +21,11 @@
     project: ProjectsItem
   }
 
-  defineProps<Props>()
+  const props = defineProps<Props>()
+
+  const icon = computed(() => {
+    return props.project.icon || 'i-uil-github-alt'
+  })
 </script>
 
 <style scoped>
