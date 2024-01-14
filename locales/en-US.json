@@ -1,28 +1,36 @@
 {
-  "projects": "Projects",
-  "projects.contributed": "Contributed repositories on GitHub",
-  "projects.not-found": "Projects not found",
-  "projects.code": "Code",
-  "projects.reload": "Reload",
-  "uses": "Uses",
-  "uses.apps": "Apps",
-  "uses.services": "Services",
-  "uses.general": "General",
-  "uses.development": "Development",
-  "uses.utilities": "Utilities",
-  "uses.browserExtensions": "Browser Extensions",
-  "uses.webDevelopment": "Web Development",
-  "uses.badge.opensource": "Open Source",
-  "uses.badge.paid": "Paid",
-  "uses.badge.freemium": "Freemium",
-  "uses.badge.macos": "MacOS",
-  "uses.badge.ios": "iOS",
-  "blog": "Blog",
-  "blog.reading.units": "min",
-  "blog.meta.published": "Published on",
-  "blog.meta.licensed": "Licensed under",
-  "blog.not-found": "Posts not found",
-  "license-text": "Code licensed under MIT, content licensed under CC BY-SA 4.0",
-  "theme-switcher": "Toggle theme",
-  "not-found": "Not found"
+  "site": {
+    "license": "Code licensed under {code}, content licensed under {content}"
+  },
+
+  "langSwitcher": {
+    "change": "Change language"
+  },
+
+  "themeSwitcher": {
+    "lightModeSwitch": "Switch to light theme",
+    "darkModeSwitch": "Switch to dark theme"
+  },
+
+  "about": {
+    "title": "About"
+  },
+
+  "projects": {
+    "title": "Projects",
+    "contributions": "GitHub Contributions",
+
+    "muuto": {
+      "preview": "Preview",
+      "reload": "Reload",
+      "code": "Code"
+    }
+  },
+
+  "blog": {
+    "title": "Blog",
+    "meta": {
+      "reading": "{0} min"
+    }
+  }
 }

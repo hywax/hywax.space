@@ -1,28 +1,36 @@
 {
-  "projects": "Проекты",
-  "projects.contributed": "Вклад в репозитории на GitHub",
-  "projects.not-found": "Проектов не найдено",
-  "projects.code": "Код",
-  "projects.reload": "Перезагрузить",
-  "uses": "Использую",
-  "uses.apps": "Приложения",
-  "uses.services": "Сервисы",
-  "uses.general": "Общее",
-  "uses.development": "Разработка",
-  "uses.utilities": "Утилиты",
-  "uses.browserExtensions": "Расширения браузера",
-  "uses.webDevelopment": "Веб-разработка",
-  "uses.badge.opensource": "Open Source",
-  "uses.badge.paid": "Платно",
-  "uses.badge.freemium": "Условно-бесплатно",
-  "uses.badge.macos": "MacOS",
-  "uses.badge.ios": "iOS",
-  "blog": "Блог",
-  "blog.reading.units": "мин",
-  "blog.meta.published": "Опубликовано",
-  "blog.meta.licensed": "Лицензия",
-  "blog.not-found": "Постов не найдено",
-  "license-text": "Код лицензирован под MIT, контент лицензирован под CC BY-SA 4.0",
-  "theme-switcher": "Переключить тему",
-  "not-found": "Ничего не найдено"
+  "site": {
+    "license": "Код лицензирован под {code}, контент лицензирован под {content}"
+  },
+
+  "langSwitcher": {
+    "change": "Смена языка"
+  },
+
+  "themeSwitcher": {
+    "lightModeSwitch": "Переключиться на светлую тему",
+    "darkModeSwitch": "Переключиться на темную тему"
+  },
+
+  "about": {
+    "title": "Обо мне"
+  },
+
+  "projects": {
+    "title": "Проекты",
+    "contributions": "Вклад на GitHub",
+
+    "muuto": {
+      "preview": "Пример",
+      "reload": "Перезагрузить",
+      "code": "Код"
+    }
+  },
+
+  "blog": {
+    "title": "Блог",
+    "meta": {
+      "reading": "{0} мин"
+    }
+  }
 }

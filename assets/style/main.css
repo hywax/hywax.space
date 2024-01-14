@@ -1,0 +1,26 @@
+:root {
+  --fg: rgb(85 85 85);
+  --fg-brighter: rgb(0 0 0);
+  --surface: rgb(136 136 136 / .07);
+  --surface-hover: rgb(136 136 136 / .10);
+  --background: rgb(255 255 255);
+}
+
+html.dark {
+  --fg: rgb(187 187 187);
+  --fg-brighter: rgb(245 245 245);
+  --surface: rgb(25, 25, 25);
+  --surface-hover: rgb(30, 30, 30);
+  --background: rgb(10 10 10);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+.container {
+  max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
+}

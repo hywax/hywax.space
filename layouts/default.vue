@@ -1,11 +1,17 @@
 <template>
-  <div>
-    <Header />
+  <NavBar />
 
-    <main class="flex flex-col w-full md:px-9 md:px-9">
-      <slot />
-    </main>
+  <main class="py-10">
+    <slot />
+  </main>
 
-    <Footer />
-  </div>
+  <Footer />
 </template>
+
+<script setup lang="ts">
+  useHead({
+    bodyAttrs: {
+      class: 'font-sans text-gray-700 dark:text-gray-200 px-4 md:px-10',
+    },
+  })
+</script>

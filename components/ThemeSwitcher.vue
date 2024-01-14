@@ -1,15 +1,11 @@
 <template>
-  <button
-    ref="trigger"
-    class="p-1 rounded-sm font-semibold transition bg-transparent hover:bg-transparent link"
-    :aria-label="$t('theme-switcher')"
-    @click="isDark = !isDark"
-  >
-    <PhosphorIconSun class="block w-6 h-6" />
+  <button class="py-2 op60 hover:op100 transition" :aria-label="ariaLabel" @click="isDark = !isDark">
+    <div class="i-ri-sun-line dark:i-ri-moon-line" />
   </button>
 </template>
 
 <script setup lang="ts">
+  const { t } = useI18n()
   const colorMode = useColorMode()
 
   const isDark = computed({
@@ -18,6 +14,8 @@
     },
     set() {
       colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
-    }
+    },
   })
+
+  const ariaLabel = computed(() => t(`themeSwitcher.${isDark.value ? 'light' : 'dark'}ModeSwitch`))
 </script>

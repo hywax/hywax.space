@@ -1,43 +1,31 @@
-import type { MarkdownParsedContent } from '@nuxt/content/dist/runtime/types'
-import { useLocale } from '~/composables/useLocale'
+import type { PostsContent, PostsItem } from '~/types'
 
-export interface PostsItem {
-  name: string
-  link: string
-  readingTime: string
-  published: string
-}
-
-export interface PostsContent extends MarkdownParsedContent {
-  publishedAt: string
-}
-
-export const usePosts = () => {
-  const { locale } = useLocale()
-
-  const formatDate = (date: string) => new Date(date).toLocaleDateString(locale.value)
+export function usePosts() {
+  const { locale } = useI18n()
 
   const getPosts = async (limit = 0): Promise<PostsItem[]> => {
     const list = await queryContent<PostsContent>('posts')
       .where({
-        _locale: locale.value,
+        _locale: toValue(locale.value),
         publishedAt: {
-          $exists: true
-        }
+          $exists: true,
+        },
       })
+      .sort({ publishedAt: -1 })
       .limit(limit)
       .find()
 
-    return list.map((content) => ({
+    return list.map((content): PostsItem => ({
       name: content.title!,
+      description: content.description || '',
       link: content._path!,
-      readingTime: Math.ceil(content.readingTime.minutes).toString(),
-      published: formatDate(content.publishedAt)
+      readingTime: formatReadingTime(content.readingTime.minutes),
+      published: formatDate(content.publishedAt, locale.value),
+      year: new Date(content.publishedAt).getFullYear(),
     }))
   }
 
   return {
     getPosts,
-    formatDate
   }
 }

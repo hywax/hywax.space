@@ -1,19 +1,17 @@
 <template>
-  <div>
+  <div class="max-w-300 mx-auto">
     <ContentDoc v-slot="{ doc }" :query="query">
-      <ContentRenderer :value="doc" />
+      <ContentRenderer :value="doc" class="prose text-center m-a" />
 
-      <ProjectsGrid :items="doc.projects" />
+      <ProjectsGrid v-for="(group, key) in doc.groups" :key="key" :title="group.title" :items="group.projects" />
+
+      <ContributedGrid :title="$t('projects.contributions')" :items="contributions" />
     </ContentDoc>
-
-    <h2 class="mb-6 text-2xl font-bold">{{ $t('projects.contributed') }}</h2>
-    <ContributedGrid :items="contributions" />
   </div>
 </template>
 
 <script setup lang="ts">
   const { query } = useLocaleContent()
-
   const { getContributions } = useProjects()
   const contributions = await getContributions()
 </script>

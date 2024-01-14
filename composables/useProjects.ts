@@ -1,38 +1,21 @@
-import type { MarkdownParsedContent } from '@nuxt/content/dist/runtime/types'
+import type { ContributionsItem, ProjectsContent, ProjectsItem } from '~/types'
 
-export interface ProjectsItem {
-  name: string
-  description: string
-  link: string
-  featured?: boolean
-}
-
-export interface ProjectsContent extends MarkdownParsedContent {
-  projects: ProjectsItem[]
-}
-
-export interface ContributionsItem {
-  name: string
-  url: string
-  star: number
-}
-
-export const useProjects = () => {
-  const { locale } = useLocale()
-  const getProjects = async (limit = 0): Promise<ProjectsItem[]> => {
+export function useProjects() {
+  const { locale } = useI18n()
+  const getProjects = async (): Promise<ProjectsItem[]> => {
     const page = await queryContent<ProjectsContent>('projects').where({ _locale: locale.value }).findOne()
 
-    return limit ? page.projects.slice(0, limit) : page.projects
+    return page.projects
   }
 
-  const getContributions = async () => {
-    const { data } = await useFetch<ContributionsItem[]>('/api/contributions')
+  const getContributions = async (): Promise<ContributionsItem[]> => {
+    const { data } = await useFetch<ContributionsItem[]>('/contributions')
 
-    return data
+    return toValue(data) || []
   }
 
   return {
     getProjects,
-    getContributions
+    getContributions,
   }
 }
