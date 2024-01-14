@@ -11,16 +11,15 @@ export default defineNuxtConfig({
     },
   },
   modules: [
+    '@nuxt/content',
     '@nuxtjs/i18n',
     '@nuxtjs/color-mode',
-    '@nuxt/content',
     '@vueuse/nuxt',
     '@unocss/nuxt',
     '@nuxtjs/robots',
   ],
   app: {
     head: {
-      titleTemplate: '%s - Hywax',
       link: [
         {
           rel: 'apple-touch-icon',
