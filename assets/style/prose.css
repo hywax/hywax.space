@@ -1,0 +1,125 @@
+.prose {
+  color: var(--fg);
+}
+
+.prose :where(img,video):not(:where(.not-prose,.not-prose *)) {
+  border-radius: 6px;
+}
+
+.prose h1 {
+  color: var(--fg-brighter);
+  font-weight: 800;
+  font-size: 2.25em;
+  margin-top: 0;
+  margin-bottom: 0.8888889em;
+  line-height: 1.1111111;
+}
+
+.prose h2 {
+  color: var(--fg-brighter);
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  line-height: 1.3333333;
+}
+
+.prose h3 {
+  color: inherit;
+  font-weight: 600;
+  font-size: 1.25em;
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
+  line-height: 1.6;
+  opacity: 0.7;
+}
+
+.prose h4 {
+  color: inherit;
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+.prose a {
+  color: var(--fg-brighter);
+  text-decoration-color: rgb(125 125 125 / 3);
+  text-decoration-thickness: 0.0625em;
+  text-underline-offset: 3px;
+  transition: text-decoration .3s ease-in-out;
+}
+
+.prose .anchor {
+  float: left;
+  margin-top: 0.125em;
+  margin-left: -1.2em;
+  padding-right: 0.5em;
+  font-size: .85em;
+  opacity: 0;
+  text-decoration: none;
+  transition: opacity .3s ease-in-out;
+}
+
+.prose h2:hover .anchor,
+.prose h3:hover .anchor,
+.prose h4:hover .anchor,
+.prose h5:hover .anchor,
+.prose h6:hover .anchor {
+  opacity: 1;
+}
+
+.prose a:hover {
+  text-decoration-color: var(--fg);
+}
+
+.prose hr {
+  height: 1px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(125 125 125 / 0.3);
+}
+
+.prose table {
+  width: 100%;
+  table-layout: auto;
+  text-align: left;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 0.875em;
+  line-height: 1.7;
+}
+
+.prose thead {
+  color: var(--fg-brighter);
+  border-bottom-width: 1px;
+  border-bottom-color: var(--surface-hover);
+}
+
+.prose thead th {
+  font-weight: 600;
+  vertical-align: bottom;
+  padding-right: 0.57em;
+  padding-bottom: 0.57em;
+  padding-left: 0.57em;
+}
+
+.prose tbody tr {
+  border-bottom-width: 1px;
+  border-bottom-color: var(--surface-hover);
+}
+
+.prose tbody tr:last-child {
+  border-bottom-width: 0;
+}
+
+.prose tbody td {
+  vertical-align: top;
+  padding: 0.57em;
+}
+
+.prose .shiki {
+  background-color: var(--surface);
+}
