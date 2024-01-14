@@ -88,4 +88,9 @@ export default defineNuxtConfig({
   robots: {
     configPath: '~/config/robots',
   },
+  nitro: {
+    prerender: {
+      routes: ['/sitemap.xml'],
+    },
+  },
 })
