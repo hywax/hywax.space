@@ -1,5 +1,9 @@
 <template>
-  <a href="#" class="project relative flex items-center op70 hover:op100 transition">
+  <NuxtLink
+    :to="project.link"
+    :target="isExternalUrl(project.link) ? '_blank' : ''"
+    class="project relative flex items-center op70 hover:op100 transition"
+  >
     <div class="pt-2 pr-4">
       <div class="w-9 h-9 opacity-50" :class="icon" />
     </div>
@@ -11,7 +15,7 @@
         {{ project.description }}
       </div>
     </div>
-  </a>
+  </NuxtLink>
 </template>
 
 <script setup lang="ts">
@@ -26,6 +30,14 @@
   const icon = computed(() => {
     return props.project.icon || 'i-uil-github-alt'
   })
+
+  const isExternalUrl = (string) => {
+    try {
+      return Boolean(new URL(string))
+    } catch (e) {}
+
+    return false
+  }
 </script>
 
 <style scoped>
