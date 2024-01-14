@@ -31,6 +31,7 @@
   import { onClickOutside } from '@vueuse/core'
 
   const { locales } = useI18n()
+  const switchLocalePath = useSwitchLocalePath()
 
   const trigger = ref<HTMLButtonElement>()
   const dropdown = ref<HTMLDivElement>()
