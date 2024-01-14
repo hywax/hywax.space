@@ -60,9 +60,8 @@ export default defineNuxtConfig({
     },
     highlight: {
       theme: {
-        default: 'material-theme',
-        light: 'material-theme-lighter',
-        dark: 'material-theme-palenight',
+        dark: 'vitesse-dark',
+        light: 'vitesse-light',
       },
     },
     markdown: {
