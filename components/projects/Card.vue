@@ -2,6 +2,7 @@
   <NuxtLink
     :to="project.link"
     :target="isExternalUrl(project.link) ? '_blank' : ''"
+    :rel="isExternalUrl(project.link) ? 'nofollow' : ''"
     class="project relative flex items-center op70 hover:op100 transition"
   >
     <div class="pt-2 pr-4">
