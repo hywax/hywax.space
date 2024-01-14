@@ -6,6 +6,7 @@ export default defineEventHandler(async (event) => {
   const docs = await serverQueryContent(event).find()
   const sitemap = new SitemapStream({
     hostname: config.host.url,
+    xslUrl: '/xml/sitemap.xsl',
   })
 
   for (const doc of docs) {
