@@ -3,8 +3,8 @@
     <div class="text-sm" :class="textClasses">
       <p
         v-html="$t('site.license', {
-          code: `<a href='#' rel='nofollow' target='_blank'>MIT</a>`,
-          content: `<a href='#' rel='nofollow' target='_blank'>CC BY-SA 4.0</a>`,
+          code: `<a href='${licences.code}' rel='nofollow' target='_blank'>MIT</a>`,
+          content: `<a href='${licences.content}' rel='nofollow' target='_blank'>CC BY-SA 4.0</a>`,
         })"
       />
     </div>
@@ -12,6 +12,7 @@
 </template>
 
 <script setup lang="ts">
+  const { licences } = useAppConfig()
   const route = useRoute()
   const getRouteBaseName = useRouteBaseName()
   const textClasses = computed(() => {
