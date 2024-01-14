@@ -4,7 +4,7 @@ export interface ProjectsItem {
   name: string
   description: string
   link: string
-  featured?: boolean
+  icon?: boolean
 }
 
 export interface ProjectsContent extends MarkdownParsedContent {
