@@ -13,11 +13,13 @@
 </template>
 
 <script setup lang="ts">
+  import type { PostsItem } from '~/types'
+
   const { query } = useLocaleContent()
   const { getPosts } = usePosts()
   const posts = await getPosts()
 
-  const postsGroupByYear = posts.reduce((acc, post) => {
+  const postsGroupByYear = posts.reduce<Record<string, PostsItem[]>>((acc, post) => {
     if (!Object.hasOwn(acc, post.year)) {
       acc[post.year] = []
     }
@@ -26,5 +28,5 @@
 
     return acc
   }, {})
-  const years = Object.keys(postsGroupByYear).sort((a, b) => b - a)
+  const years = Object.keys(postsGroupByYear).sort((a, b) => Number.parseInt(b) - Number.parseInt(a))
 </script>

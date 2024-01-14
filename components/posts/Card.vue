@@ -26,4 +26,6 @@
   }
 
   defineProps<Props>()
+
+  const localePath = useLocalePath()
 </script>

@@ -8,10 +8,10 @@ export function useProjects() {
     return page.projects
   }
 
-  const getContributions = async () => {
+  const getContributions = async (): Promise<ContributionsItem[]> => {
     const { data } = await useFetch<ContributionsItem[]>('/contributions')
 
-    return data
+    return toValue(data) || []
   }
 
   return {

@@ -1,4 +1,3 @@
-import type { H3Event } from 'h3'
 import type { ContributionsItem } from '~/types'
 
 interface GraphQLResponse {
@@ -47,8 +46,8 @@ const queryContributions = `{
   }
 }`
 
-export async function useContributions(event: H3Event): Promise<ContributionsItem[]> {
-  const config = useRuntimeConfig(event)
+export async function useContributions(): Promise<ContributionsItem[]> {
+  const config = useRuntimeConfig()
 
   try {
     const response = await $fetch<GraphQLResponse>('https://api.github.com/graphql', {

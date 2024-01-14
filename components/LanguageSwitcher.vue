@@ -13,15 +13,16 @@
       aria-labelledby="menu-button"
     >
       <div class="py-1">
-        <NuxtLink
-          v-for="loc in locales"
-          :key="loc.code"
-          :to="switchLocalePath(loc.code)"
-          role="menuitem"
-          class="item block w-full px-4 py-2 text-left text-sm transition"
-        >
-          {{ loc?.name }}
-        </NuxtLink>
+        <template v-for="(loc, key) in locales" :key="key">
+          <NuxtLink
+            v-if="typeof loc === 'object'"
+            :to="switchLocalePath(loc.code)"
+            role="menuitem"
+            class="item block w-full px-4 py-2 text-left text-sm transition"
+          >
+            {{ loc?.name }}
+          </NuxtLink>
+        </template>
       </div>
     </div>
   </div>
