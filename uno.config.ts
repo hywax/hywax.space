@@ -1,4 +1,6 @@
 import { defineConfig, presetAttributify, presetIcons, presetMini, presetTypography, presetUno, presetWebFonts, transformerDirectives } from 'unocss'
+import { FileSystemIconLoader } from '@iconify/utils/lib/loader/node-loaders'
+
 export default defineConfig({
   content: {
     filesystem: [
@@ -16,6 +18,9 @@ export default defineConfig({
         'width': '1.2em',
         'vertical-align': 'text-bottom',
       },
+      collections: {
+        custom: FileSystemIconLoader('./assets/icons')
+      }
     }),
     presetTypography(),
     presetWebFonts({
