@@ -35,7 +35,7 @@
     "lint-staged": "^15.2.0",
     "nuxt": "^3.9.3",
     "remark-reading-time": "^2.0.1",
-    "sass": "^1.69.5",
+    "sass": "^1.70.0",
     "typescript": "^5.2.2",
     "vue": "^3.3.7",
     "vue-router": "^4.2.5",
