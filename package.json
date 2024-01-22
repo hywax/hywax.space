@@ -33,7 +33,7 @@
     "eslint": "^8.56.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
-    "nuxt": "^3.8.0",
+    "nuxt": "^3.9.3",
     "remark-reading-time": "^2.0.1",
     "sass": "^1.69.5",
     "typescript": "^5.2.2",
