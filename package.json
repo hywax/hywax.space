@@ -24,7 +24,7 @@
     "@antfu/eslint-config": "^2.6.3",
     "@commitlint/cli": "^18.4.4",
     "@commitlint/config-conventional": "^18.4.4",
-    "@iconify/json": "^2.2.167",
+    "@iconify/json": "^2.2.172",
     "@nuxt/devtools": "^1.0.8",
     "@nuxtjs/color-mode": "^3.3.0",
     "@nuxtjs/i18n": "^8.0.0",
