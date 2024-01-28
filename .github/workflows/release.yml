@@ -41,7 +41,7 @@ jobs:
           NUXT_HOST_URL: ${{ secrets.NUXT_HOST_URL  }}
           NUXT_GITHUB_TOKEN: ${{ secrets.NUXT_GITHUB_TOKEN  }}
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v2
         with:
           name: github-pages
           path: .output/public
@@ -49,13 +49,13 @@ jobs:
   deploy:
     name: Deploy
     needs: build
-    runs-on: ubuntu-latest
     permissions:
       pages: write
       id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
