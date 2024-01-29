@@ -31,7 +31,7 @@
     "@unocss/nuxt": "^0.58.4",
     "@unocss/reset": "^0.58.4",
     "eslint": "^8.56.0",
-    "husky": "^9.0.6",
+    "husky": "^9.0.7",
     "lint-staged": "^15.2.0",
     "nuxt": "^3.9.3",
     "remark-reading-time": "^2.0.1",
