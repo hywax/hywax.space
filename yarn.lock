@@ -6427,10 +6427,10 @@ muggle-string@^0.3.1:
   resolved "https://registry.yarnpkg.com/muggle-string/-/muggle-string-0.3.1.tgz#e524312eb1728c63dd0b2ac49e3282e6ed85963a"
   integrity sha512-ckmWDJjphvd/FvZawgygcUeQCxzvohjFO5RxTjj4eq8kw359gFF3E1brjfI+viLMxss5JrHTDRHZvu2/tuy0Qg==
 
-muuto@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/muuto/-/muuto-2.0.1.tgz#9229720462af47a3ce37136f0f18ec33f3146833"
-  integrity sha512-DHEp784fGTJnm0qSRfDrm9E97PzZbRDRA9gmTC8qcfBfOrUZmxyiMZ3YKF0scE4Nd4JIgGjt6m4X7v9gi8qBMw==
+muuto@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/muuto/-/muuto-2.0.2.tgz#aa54c04c7b3bbe64962361ab2af418be3de1e811"
+  integrity sha512-bAnhni1JH4yV2/QztR0virxl/LVoXP/GTdR9M/c8CcjZzgcMmsqGz22pq5Sk/kIgWG8E54t/4jIYmLwbNPsh9g==
 
 mz@^2.7.0:
   version "2.7.0"
