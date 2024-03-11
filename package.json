@@ -14,32 +14,32 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@nuxt/content": "^2.11.0",
+    "@nuxt/content": "^2.12.1",
     "@nuxtjs/robots": "^3.0.0",
-    "@vueuse/nuxt": "^10.7.2",
+    "@vueuse/nuxt": "^10.9.0",
     "muuto": "^2.0.2",
     "sitemap": "^7.1.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.6.4",
-    "@commitlint/cli": "^18.6.0",
-    "@commitlint/config-conventional": "^18.6.0",
-    "@iconify/json": "^2.2.179",
+    "@antfu/eslint-config": "^2.8.0",
+    "@commitlint/cli": "^18.6.1",
+    "@commitlint/config-conventional": "^18.6.3",
+    "@iconify/json": "^2.2.191",
     "@nuxt/devtools": "^1.0.8",
     "@nuxtjs/color-mode": "^3.3.2",
-    "@nuxtjs/i18n": "^8.0.1",
+    "@nuxtjs/i18n": "^8.1.1",
     "@unocss/nuxt": "^0.58.5",
     "@unocss/reset": "^0.58.5",
-    "eslint": "^8.56.0",
-    "husky": "^9.0.10",
-    "lint-staged": "^15.2.1",
-    "nuxt": "^3.10.0",
+    "eslint": "^8.57.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "nuxt": "^3.10.3",
     "remark-reading-time": "^2.0.1",
-    "sass": "^1.70.0",
-    "typescript": "^5.3.3",
-    "vue": "^3.4.15",
-    "vue-router": "^4.2.5",
-    "vue-tsc": "^2.0.2"
+    "sass": "^1.71.1",
+    "typescript": "^5.4.2",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0",
+    "vue-tsc": "^2.0.6"
   },
   "lint-staged": {
     "*.ts": "yarn run lint:es"
