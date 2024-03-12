@@ -21,5 +21,7 @@
     if (path === 'projects') {
       return 'text-center basis-full'
     }
+
+    return ''
   })
 </script>
