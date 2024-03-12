@@ -5939,6 +5939,11 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
+lxc-idmapper@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/lxc-idmapper/-/lxc-idmapper-0.1.0.tgz#a51a30d2e720a75caefaa7506f7819bf45c3da78"
+  integrity sha512-NvZHYNgrnMW8Czr7gZbfUhFMNKc+UYhPThyssC+a5s3F3oFV7pSVQs1XXucOtqLda+xGnYItisIVPqLtARRqMA==
+
 magic-string-ast@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/magic-string-ast/-/magic-string-ast-0.3.0.tgz#8fc83ac6d084c5a342645a30354184a6e0ab4382"
