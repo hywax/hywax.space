@@ -4,6 +4,9 @@
       <ContentRenderer :value="doc" />
     </ContentDoc>
 
+    <a href="https://github.com/hywax/muuto" target="_blank" rel="nofollow"><span class="i-uil:github-alt"></span> {{ $t('projects.view.github') }}</a>
+    <a href="https://www.npmjs.com/package/muuto" target="_blank" rel="nofollow" class="ml-3"><span class="i-teenyicons:npm-solid"></span> {{ $t('projects.view.npm') }}</a>
+
     <h2>{{ $t('projects.muuto.preview') }}</h2>
     <div class="preview not-prose rounded-lg p-6">
       <TransitionGroup tag="ul" name="fade" class="flex flex-wrap gap-2 mb-8">

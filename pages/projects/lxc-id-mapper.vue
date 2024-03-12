@@ -4,6 +4,9 @@
       <ContentRenderer :value="doc" />
     </ContentDoc>
 
+    <a href="https://github.com/hywax/lxc-idmapper" target="_blank" rel="nofollow"><span class="i-uil:github-alt"></span> {{ $t('projects.view.github') }}</a>
+    <a href="https://www.npmjs.com/package/lxc-idmapper" target="_blank" rel="nofollow" class="ml-3"><span class="i-teenyicons:npm-solid"></span> {{ $t('projects.view.npm') }}</a>
+
     <h2>{{ $t('projects.lxcIdMapper.mapping.title') }}</h2>
 
     <p>{{ $t('projects.lxcIdMapper.mapping.text') }}</p>

@@ -19,6 +19,10 @@
   "projects": {
     "title": "Проекты",
     "contributions": "Вклад на GitHub",
+    "view": {
+      "npm": "Перейти в Npm",
+      "github": "Перейти в Github"
+    },
 
     "muuto": {
       "preview": "Пример",

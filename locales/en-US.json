@@ -19,6 +19,10 @@
   "projects": {
     "title": "Projects",
     "contributions": "GitHub Contributions",
+    "view": {
+      "npm": "View on Npm",
+      "github": "View on Github"
+    },
 
     "muuto": {
       "preview": "Preview",
