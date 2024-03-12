@@ -24,6 +24,22 @@
       "preview": "Пример",
       "reload": "Перезагрузить",
       "code": "Код"
+    },
+
+    "lxcIdMapper": {
+      "mapping": {
+        "title": "LXC ID Mapper",
+        "text": "Заполните все необходимые сравнения в таблице",
+        "table": {
+          "hostId": "Контейнер ID",
+          "containerId": "Хост ID",
+          "placeholder": "Пример: {0}"
+        }
+      },
+      "instructions": {
+        "title": "Инструкции по добавлению",
+        "add": "Добавьте в"
+      }
     }
   },
 
