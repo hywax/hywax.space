@@ -120,6 +120,6 @@
   padding: 0.57em;
 }
 
-.prose .shiki {
+.prose pre {
   background-color: var(--surface);
 }

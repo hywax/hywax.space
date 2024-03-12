@@ -24,3 +24,11 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+.bg-surface {
+  background-color: var(--surface);
+}
+
+.bg-surface-hover:hover {
+  background-color: var(--surface-hover);
+}
