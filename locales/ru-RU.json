@@ -35,8 +35,8 @@
         "title": "LXC ID Mapper",
         "text": "Заполните все необходимые сравнения в таблице",
         "table": {
-          "hostId": "Контейнер ID",
-          "containerId": "Хост ID",
+          "hostId": "Хост ID",
+          "containerId": "Контейнер ID",
           "placeholder": "Пример: {0}"
         }
       },
