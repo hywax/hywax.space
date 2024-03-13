@@ -32,7 +32,7 @@
 
     "lxcIdMapper": {
       "mapping": {
-        "title": "LXC ID Mapper",
+        "title": "Mapper",
         "text": "Fill in all necessary comparisons in the table",
         "table": {
           "hostId": "Container ID",
