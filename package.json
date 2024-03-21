@@ -22,25 +22,25 @@
     "sitemap": "^7.1.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.8.3",
-    "@commitlint/cli": "^19.2.0",
+    "@antfu/eslint-config": "^2.9.0",
+    "@commitlint/cli": "^19.2.1",
     "@commitlint/config-conventional": "^19.1.0",
-    "@iconify/json": "^2.2.192",
-    "@nuxt/devtools": "^1.0.8",
-    "@nuxtjs/color-mode": "^3.3.2",
+    "@iconify/json": "^2.2.194",
+    "@nuxt/devtools": "^1.1.3",
+    "@nuxtjs/color-mode": "^3.3.3",
     "@nuxtjs/i18n": "^8.2.0",
     "@unocss/nuxt": "^0.58.6",
     "@unocss/reset": "^0.58.6",
     "eslint": "^8.57.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
-    "nuxt": "^3.10.3",
+    "nuxt": "^3.11.1",
     "remark-reading-time": "^2.0.1",
     "sass": "^1.72.0",
-    "typescript": "^5.4.2",
+    "typescript": "^5.4.3",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0",
-    "vue-tsc": "^2.0.6"
+    "vue-tsc": "^2.0.7"
   },
   "lint-staged": {
     "*.ts": "yarn run lint:es"
