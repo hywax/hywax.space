@@ -15,10 +15,10 @@
     "@jridgewell/gen-mapping" "^0.3.5"
     "@jridgewell/trace-mapping" "^0.3.24"
 
-"@antfu/eslint-config@^2.11.5":
-  version "2.11.5"
-  resolved "https://registry.yarnpkg.com/@antfu/eslint-config/-/eslint-config-2.11.5.tgz#a4fb20e28976a2b465fddc3745304d96d8036cc8"
-  integrity sha512-Aixz/pYx4egbCgHjOMgJJHL2HITgvscrq5DowTLd3B5V4cRQaKcpa6eRlT/zhlF72LPxBa65DqnRCTV5IiNAJw==
+"@antfu/eslint-config@^2.11.6":
+  version "2.11.6"
+  resolved "https://registry.yarnpkg.com/@antfu/eslint-config/-/eslint-config-2.11.6.tgz#2d14c52aa5635cc123b4860cc1e02a52517064b0"
+  integrity sha512-v8f1uskX9w3c7IwvQu1pw02d19qc0o//LjILVlzv3B81bsO22x4hJkwQdJEhvypR3Z82vhCnCXfa6yoMddW1pg==
   dependencies:
     "@antfu/install-pkg" "^0.3.2"
     "@clack/prompts" "^0.7.0"
