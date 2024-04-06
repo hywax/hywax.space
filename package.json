@@ -31,7 +31,7 @@
     "@nuxtjs/i18n": "^8.3.0",
     "@unocss/nuxt": "^0.58.9",
     "@unocss/reset": "^0.58.9",
-    "eslint": "^8.57.0",
+    "eslint": "^9.0.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "nuxt": "^3.11.1",
