@@ -123,3 +123,27 @@
 .prose pre {
   background-color: var(--surface);
 }
+
+.prose details {
+  padding: 0;
+}
+
+.prose details summary {
+  color: var(--fg-brighter);
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-color: rgb(125 125 125 / 3);
+  text-decoration-thickness: 0.0625em;
+  text-underline-offset: 3px;
+  transition: text-decoration .3s ease-in-out;
+}
+
+.prose details summary::marker {
+  display: none;
+  content: '';
+}
+
+.prose ul details {
+  margin: 0;
+  padding: 0;
+}
