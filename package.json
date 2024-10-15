@@ -19,7 +19,7 @@
     "@vueuse/nuxt": "^11.1.0",
     "lxc-idmapper": "^0.1.0",
     "muuto": "^2.0.2",
-    "sitemap": "^7.1.2"
+    "sitemap": "^8.0.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.21.1",
